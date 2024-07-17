@@ -7,7 +7,7 @@ const ExportExcel = () =>{
    
     const [data,setdatos] = useState([]);
     const url = "https://julieta-api-git-main-mateolozs-projects.vercel.app/Users";
-    const urlb = "http://localhost:8000/";
+    const urlb = "https://juli-db.vercel.app/";
     const filename = "tabla de Usuarios"
 
     useEffect(()=>{

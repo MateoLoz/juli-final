@@ -146,7 +146,7 @@ const handleSubmit = (e) => {
 if(!dataToEdit){
 async function postdata(){
  
-    await  axios.post("http://localhost:8000/create",{
+    await  axios.post("https://juli-db.vercel.app/create",{
          nombre,
          apellido,
          email,
@@ -180,7 +180,7 @@ postdata();
    
 if(dataToEdit){
     async function putdata(){
-        await axios.put("http://localhost:8000/update",{
+        await axios.put("https://juli-db.vercel.app/update",{
             nombre,
             apellido,
             email,

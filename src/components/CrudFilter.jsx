@@ -13,7 +13,7 @@ const [option,setoption]= useState('');
 const [condition,setcondition] = useState(false);
 const [serch,setserch] = useState();
 let identificador;
-
+let url  = 'https://juli-db.vercel.app/';
 const rotar = () =>{
 
     if(!rotate){
@@ -80,7 +80,7 @@ const noseque = (id) =>{
 const evaluationFilter = (id,valor) =>{
    
     if(valor === 1){
-        axios.get('http://localhost:8000/Pago').then((res)=>{
+        axios.get(`${url}Pago`).then((res)=>{
          
                 console.log(res.data);
                 console.log(res.status);
@@ -92,7 +92,7 @@ const evaluationFilter = (id,valor) =>{
        noseque(id);
     }
     if(valor === 2){
-        axios.get('http://localhost:8000/Inpago').then((res)=>{
+        axios.get(`${url}Inpago`).then((res)=>{
            
                 console.log(res.data);
                 console.log(res.status);
@@ -106,7 +106,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 3 ){
 
-        axios.get('http://localhost:8000/bono-mensual-medium').then((res)=>{
+        axios.get(`${url}bono-mensual-medium`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
@@ -121,7 +121,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 4 ){
 
-        axios.get('http://localhost:8000/bono-mensual-basico').then((res)=>{
+        axios.get(`${url}bono-mensual-basico`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
@@ -136,7 +136,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 5 ){
 
-        axios.get('http://localhost:8000/bono-semanal').then((res)=>{
+        axios.get(`${url}bono-semanal`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
@@ -151,7 +151,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 6 ){
 
-        axios.get('http://localhost:8000/bono-diario').then((res)=>{
+        axios.get(`${url}bono-diario`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
@@ -166,7 +166,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 7 ){
 
-        axios.get('http://localhost:8000/taller-intensivo').then((res)=>{
+        axios.get(`${url}taller-intensivo`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
@@ -181,7 +181,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 8 ){
 
-        axios.get('http://localhost:8000/bono-bichoo-feo').then((res)=>{
+        axios.get(`${url}bono-bicho-feo`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);
@@ -196,7 +196,7 @@ const evaluationFilter = (id,valor) =>{
 
     if(valor === 9 ){
 
-        axios.get('http://localhost:8000/').then((res)=>{
+        axios.get(`${url}`).then((res)=>{
            
             console.log(res.data);
             console.log(res.status);

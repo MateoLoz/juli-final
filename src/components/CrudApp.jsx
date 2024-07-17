@@ -16,9 +16,9 @@ const CrudApp = () =>{
     const [keyserch,setkeyserch] =useState('');
 
     const [urlfilter,seturlfilter] = useState();
-    const [urlserch,seturlserch] = useState('http://localhost:8000/serch');
+    const [urlserch,seturlserch] = useState('https://juli-db.vercel.app/serch');
     let api = HelperHttp();
-    let url = "http://localhost:8000/"; 
+    let url = "https://juli-db.vercel.app/"; 
     let urlb = "https://julieta-api.vercel.app/Users";
     
    
