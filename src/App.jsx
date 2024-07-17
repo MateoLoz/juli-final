@@ -3,7 +3,7 @@ import './App.css'
 import CrudApp from './components/CrudApp'
 ;
 import { BrowserRouter,Router,Route, Routes } from 'react-router-dom';
-import CrudAdd from './components/CrudAdd';
+
 function App() {
 
   return (
